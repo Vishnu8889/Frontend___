@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Rating Predictor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar" style="position: sticky; top: 0;">
+        <div class="logo">
+            <span class="icon">🧠</span>
+            <div>
+                <h2>RecommendAI</h2>
+                <p>Smart Product Discovery</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <h4>NAVIGATION</h4>
+            <ul>
+                <li class="active"><a href="index.html">🔍 Product Search</a></li>
+                <li><a href="trending.html">📈 Trending Products</a></li>
+                <li><a href="rating.html">⭐ Rating Predictor</a></li>
+                <li><a href="similar.html">🔁 Similar Products</a></li>
+            </ul>
+        </nav>
+        <div class="insights">
+            <h4>INSIGHTS</h4>
+            <ul>
+                <li>🟢 ML Models Active</li>
+                <li>🟢 Recommendations Ready</li>
+            </ul>
+        </div>
+        <div class="engine">
+            <p>⚙️ <strong>ML Engine</strong><br>Powered by Advanced AI</p>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div style="text-align: center; flex-grow: 1;color: #FF7D29;">
+                <h1 style="color:#FF7D29;">Find Your Perfect <span>Product</span></h1>
+            </div>
+            <!-- <button>Explore more</button> -->
+        </header>
+
+        <div class="search-box">
+            <h3>🔍 Smart Product Search</h3>
+            <p>Discover personalized recommendations</p>
+            <div class="search-bar">
+                <input style="width: 450px;flex-grow: 2;" type="text" placeholder="Search for products..." />
+                <select>
+                    <option>All Categories</option>
+                </select>
+                <select>
+                    <option>All Brands</option>
+                </select>
+                <button>🔍 Search Products</button>
+            </div>
+        </div>
+
+        <h2>Recommended for You</h2>
+
+        <div class="product-grid" style="display: flex; flex-wrap: wrap; gap: 20px;" id="product">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <span class="badge">Trending</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">OPI</div>
+                <div class="title">Nicole by OPI Nail Lacquer, Next Stop the...</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(1)</small></div>
+                <div class="price">$194</div>
+            </div>
+
+            <div class="product-card">
+                <span class="badge">Trending</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">OPI</div>
+                <div class="title">Nicole by OPI Nail Lacquer, Next Stop the...</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(1)</small></div>
+                <div class="price">$194</div>
+                
+            </div>
+
+            <div class="product-card">
+                <span class="badge">Trending</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">OPI</div>
+                <div class="title">Nicole by OPI Nail Lacquer, Next Stop the...</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(1)</small></div>
+                <div class="price">$194</div>
+                
+            </div>
+
+            <div class="product-card">
+                <span class="badge">Trending</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">OPI</div>
+                <div class="title">Nicole by OPI Nail Lacquer, Next Stop the...</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(1)</small></div>
+                <div class="price">$194</div>
+                
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <span class="badge">Trending</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">R+CO</div>
+                <div class="title">R+Co Aircraft Pomade Mousse, 5.6 Oz</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(1)</small></div>
+                <div class="price">$174 <span class="old-price">$200</span></div>
+                
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <span class="badge">Trending</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">CANDLE WARMERS ETC</div>
+                <div class="title">Candle Warmers Etc. Rustic Brown Hurricane...</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(10)</small></div>
+                <div class="price">$161</div>
+                
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">BAIN DE TERRE</div>
+                <div class="title">Recovery Complex Anti-Frizz Shine Serum by Bai...</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(4)</small></div>
+                <div class="price">$160</div>
+                
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">RENEW LIFE</div>
+                <div class="title">ReNew Life CleanseMore, 60 Capsules</div>
+                <div class="rating">⭐⭐⭐⭐ <small>(5)</small></div>
+                <div class="price">$142</div>
+                
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <span class="discount">-17%</span>
+                <img src="https://i5.walmartimages.com/asr/9ff61eaf-7d12-4e46-b952-8a621119f308_1.1d4cecd3bcac85150a68e70d3325c307.jpeg"
+                    alt="Product Image" />
+                <div class="brand">ALBA BOTANICA</div>
+                <div class="title">Alba Botanica Very Emollient Body Lotion</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <small>(3)</small></div>
+                <div class="price">$112 <span class="old-price">$135</span></div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
